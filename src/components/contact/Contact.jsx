@@ -1,14 +1,27 @@
 import { useState } from "react";
 import "./contact.scss";
+import emailjs from '@emailjs/browser';
+
+const Result =()=>{
+  return(
+    <p>Thank you for message! I will contact you soon. :)</p>
+  )
+}
 
 export default function Contact() {
-  const [message, setMessage] = useState("Submit");
+  const [result, showResult] = useState(false);
   // send form to my email
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    setMessage("Sending...");
-    
-    
+
+    emailjs.sendForm('service_adruyct', 'template_mpybllt', e.target, 'p9dWf-Vno5Ws6zVaV')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+      showResult(true)
   };
 
 
@@ -20,13 +33,15 @@ export default function Contact() {
       <div className="right">
         <h2>Contact.</h2>
 
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder= "Full Name" required />
-          <input type="email" placeholder="Email" required />
-          <input type="text" placeholder="Subject Line" required/>
-          <textarea placeholder="Message" required></textarea>
+        <form onSubmit={sendEmail}>
+          <input type="text" placeholder= "Full Name" name="fullname" required />
+          <input type="email" placeholder="Email" name="email" required />
+          <input type="text" placeholder="Subject Line" name="subject" required/>
+          <textarea placeholder="Message" name="message" required></textarea>
           <button type="submit">Send</button>
-          {/* {message && <span>Thanks, I'll reply ASAP :)</span>} */}
+          <div>
+            {result ? <Result/> : null}</div>
+        
         </form>
       </div>
     </div>
