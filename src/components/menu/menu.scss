@@ -13,7 +13,9 @@
     align-items: center;
     justify-content: center;
     transition: all 1s ease;
-
+    @include mobile{
+        z-index: 9;
+      }
     &.active {
         right: 0;
     }

@@ -38,6 +38,10 @@ export default function Intro() {
           <img src="assets/down.png" alt="" />
         </a>
       </div>
+
+      
+      
+      
     </div>
   );
 }
