@@ -1,8 +1,41 @@
 $mainColor: #15023a;
-$width: 768px;
-$height: 1000px;
-@mixin mobile{
-    @media(max-width: #{$width}) and (max-height: #{$height}){
-        @content
-    }
+
+@mixin tablet {
+  @media screen and (min-width: 600px) {
+    //For Tablets
+    @content;
+  }
+}
+
+@mixin laptopNormal {
+  @media screen and (min-width: 768px) {
+    //For Laptops
+    @content;
+  }
+}
+
+@mixin laptopLarge {
+  @media screen and (min-width: 992px) {
+    //For Large Laptops
+    @content;
+  }
+}
+@mixin tv {
+  @media screen and (min-width: 1280px) {
+    //For Big TV's (HD Screens)
+    @content;
+  }
+}
+
+@mixin highres {
+  @media screen and (min-width: 1920px) {
+    //For Projectors or Higher Resolution Screens (Full HD)
+    @content;
+  }
+}
+@mixin ultraHD {
+  @media screen and (min-width: 3840px) {
+    //For 4K Displays (Ultra HD)
+    @content;
+  }
 }

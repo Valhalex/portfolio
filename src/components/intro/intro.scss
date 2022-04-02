@@ -4,78 +4,67 @@
   background-color: white;
   display: flex;
 
-  @include mobile {
-    flex-direction: column;
-    align-items: center;
+  @include tablet {
+    
+  
   }
-
+  // container
   .left {
-    flex: 0.5;
     overflow: hidden;
-    @include mobile {
-      z-index: 1;
-      position: relative;
-      overflow: visible;
-    }
 
+    @include tablet {
+      height: 100%;
+      width: 50%;
+      
+
+    }
+    
+    // container for cartoon 
     .imgContainer {
-      width: 700px;
-      height: 700px;
-      background-color: crimson;
+      background: crimson;
       border-radius: 50%;
       display: flex;
+      // put character at bottom of container and centered
       align-items: flex-end;
       justify-content: center;
-      float: right;
-
-      @include mobile {
-        align-items: flex-start;
-        // width:100%;
-        // height:100%
+      
+      // push characters background slightly offscreen
+      @include tablet{
+        position:relative;
+        right: 20%;
+        width: 120%;
+        height: 120%;
+        
       }
-
+      
+      
       img {
-        height: 90%;
-
-        @include mobile {
-          height: 100%;
+        @include tablet{
+          width: 100%;
+          height:100%;
         }
+        
+        
       }
     }
   }
   .right {
-    flex: 0.5;
-    position: relative;
-
-    @include mobile {
-      z-index: 2;
-      top: -20vw;
-      background-color: white;
-      border-radius: 5%;
-      opacity: 90%;
-      box-shadow: 0px 0px 10px 10px white;
-      width: 90%;
+    @include tablet{
+      width: 50%;
+      height:auto;
     }
+
     .wrapper {
       width: 100%;
       height: 100%;
-      padding-left: 50px;
+      padding-left: 8%;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
-      @include mobile {
-        padding-left: 0;
-        align-items: center;
-      }
-
       h1 {
         font-size: 60px;
         margin: 10px 0;
-
-        @include mobile {
-          font-size: 40px;
-        }
       }
       h2 {
         font-size: 35px;
@@ -83,16 +72,13 @@
       h3 {
         font-size: 30px;
 
-        @include mobile {
-          font-size: 20px;
-        }
-
         span {
           font-size: inherit;
           color: crimson;
         }
 
         .ityped-cursor {
+          word-break: break-all;
           animation: blink 1s infinite;
         }
 
@@ -110,18 +96,15 @@
     a {
       position: absolute;
       bottom: 10px;
-      left: 40%;
-      @include mobile{
-        display: none;
-
+      
+      @include tablet{
+        right: 50%;
       }
 
       img {
         // down arrow that leads to portfolio
         width: 30px;
         animation: arrowBlink 2s infinite;
-        
-        
       }
 
       @keyframes arrowBlink {
@@ -131,7 +114,4 @@
       }
     }
   }
-
-  
-  
 }

@@ -13,11 +13,17 @@
     align-items: center;
     justify-content: center;
     transition: all 1s ease;
-    @include mobile{
-        z-index: 9;
-      }
+    @include tablet{
+        width: 50%;
+        right: -50%;
+    }
+    
+    
     &.active {
         right: 0;
+        @include tablet{
+        right: 50%
+        }
     }
 
     ul {
