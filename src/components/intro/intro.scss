@@ -1,13 +1,23 @@
 @import "../../global.scss";
 
-.intro {
-  background-color: white;
-  display: flex;
 
-  @include tablet {
-    
+.intro {
+  font-family: Teko;
+  display: flex;
   
+
+  background: url(../../../public/assets/city.png), rgb(32, 32, 32);
+  // makes background stick to ground on tablet devices
+  @include tablet {
+    background-attachment: fixed, scroll;
+    z-index: -5;
+    background-size: contain;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
   }
+
   // container
   .left {
     overflow: hidden;
@@ -15,43 +25,40 @@
     @include tablet {
       height: 100%;
       width: 50%;
-      
-
     }
-    
-    // container for cartoon 
+
+    // container for cartoon
     .imgContainer {
-      background: crimson;
+      background: rgba($color: rgb(207, 207, 141), $alpha: 0.1);
+
       border-radius: 50%;
       display: flex;
       // put character at bottom of container and centered
       align-items: flex-end;
       justify-content: center;
-      
+
       // push characters background slightly offscreen
-      @include tablet{
-        position:relative;
+      @include tablet {
+        position: relative;
         right: 20%;
         width: 120%;
         height: 120%;
-        
       }
-      
-      
+
+      // character size
       img {
-        @include tablet{
-          width: 100%;
-          height:100%;
+        @include tablet {
+          width: 90%;
+          height: 100%;
+          opacity: 100%;
         }
-        
-        
       }
     }
   }
   .right {
-    @include tablet{
+    @include tablet {
       width: 50%;
-      height:auto;
+      height: auto;
     }
 
     .wrapper {
@@ -63,18 +70,19 @@
       justify-content: center;
 
       h1 {
-        font-size: 60px;
-        margin: 10px 0;
+        @include tablet {
+          font-size: 75px;
+        }
       }
       h2 {
-        font-size: 35px;
+        font-size: 65px;
       }
       h3 {
-        font-size: 30px;
+        font-size: 95px;
 
         span {
           font-size: inherit;
-          color: crimson;
+          color: rgb(189, 157, 18);
         }
 
         .ityped-cursor {
@@ -96,8 +104,8 @@
     a {
       position: absolute;
       bottom: 10px;
-      
-      @include tablet{
+
+      @include tablet {
         right: 50%;
       }
 
@@ -115,3 +123,20 @@
     }
   }
 }
+
+// .intro::before {
+//   content: "";
+//   position: fixed;
+//   left: 0;
+//   right: 0;
+//   z-index: -4;
+
+//   display: block;
+//   background: url(../../../public/assets/citylights.png),rgb(32, 32, 32);
+//   background-size:contain;
+//   background-position-y: 100%;
+//   background-repeat: repeat-x;
+//   width: 100%;
+//   height: 100%;
+
+// }
