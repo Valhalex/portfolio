@@ -52,16 +52,22 @@
 
       h1 {
         font-size: 75px;
+        color: $mainColor;
+
       }
       h2 {
         font-size: 65px;
+        color: $mainColor;
+
       }
       h3 {
         font-size: 95px;
+        color: $textMain;
+
 
         span {
           font-size: inherit;
-          color: rgb(228, 218, 78);
+          color: $textMain;
         }
 
         .ityped-cursor {

@@ -1,5 +1,7 @@
-$mainColor: #15023a;
-$lightGray:rgb(36, 36, 36);
+$mainColor: #441944;
+$secondary: #D72F53;
+$textMain: rgb(228, 218, 78);
+
 @mixin tablet {
   @media screen and (min-width: 600px) {
     //For Tablets
