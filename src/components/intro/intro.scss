@@ -1,78 +1,57 @@
 @import "../../global.scss";
 
-
+// container
 .intro {
   font-family: Teko;
   display: flex;
+
+  // place background, they should stack in the following order with the first being on top
+  //   trees, mountains, moon/stars, sky
+
+  height: 100%;
+  width: 100%;
+
+  .bottom{
+    background-image: url('../../../public/assets/nighsky.jpg');
+    background-size: cover;
+    filter:saturate(6);
+    filter:blur(4px)
+  }
+  .gradient{
+    background: linear-gradient(rgba(255, 124, 124, 0.753) 10%, rgba(255, 244, 86, 0.788));
+  }
+  .midground{
+    background-image: url('../../../public/assets/mnt.png');
+    background-size: cover;
+    filter:blur(3px); 
+
+  }
+  .foreground{
+    background-image: url('../../../public/assets/tree.PNG');
+    background-size: cover    
+    
   
+  }
 
-  background: url(../../../public/assets/city.png), rgb(32, 32, 32);
-  // makes background stick to ground on tablet devices
-  @include tablet {
-    background-attachment: fixed, scroll;
-    z-index: -5;
-    background-size: contain;
-    background-position-y: 100%;
-    background-repeat: no-repeat;
+  .frontTextContainer {
+    z-index: 3;
+    position: absolute;
     width: 100%;
-    height: 100%;
-  }
-
-  // container
-  .left {
-    overflow: hidden;
-
-    @include tablet {
-      height: 100%;
-      width: 50%;
-    }
-
-    // container for cartoon
-    .imgContainer {
-      background: rgba($color: rgb(207, 207, 141), $alpha: 0.1);
-
-      border-radius: 50%;
-      display: flex;
-      // put character at bottom of container and centered
-      align-items: flex-end;
-      justify-content: center;
-
-      // push characters background slightly offscreen
-      @include tablet {
-        position: relative;
-        right: 20%;
-        width: 120%;
-        height: 120%;
-      }
-
-      // character size
-      img {
-        @include tablet {
-          width: 90%;
-          height: 100%;
-          opacity: 100%;
-        }
-      }
-    }
-  }
-  .right {
-    @include tablet {
-      width: 50%;
-      height: auto;
-    }
-
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     .wrapper {
       width: 100%;
       height: 100%;
-      padding-left: 8%;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
 
       h1 {
-        @include tablet {
-          font-size: 75px;
-        }
+        font-size: 75px;
       }
       h2 {
         font-size: 65px;
@@ -82,7 +61,7 @@
 
         span {
           font-size: inherit;
-          color: rgb(189, 157, 18);
+          color: rgb(228, 218, 78);
         }
 
         .ityped-cursor {
@@ -105,9 +84,7 @@
       position: absolute;
       bottom: 10px;
 
-      @include tablet {
-        right: 50%;
-      }
+      right: 50%;
 
       img {
         // down arrow that leads to portfolio
@@ -123,20 +100,3 @@
     }
   }
 }
-
-// .intro::before {
-//   content: "";
-//   position: fixed;
-//   left: 0;
-//   right: 0;
-//   z-index: -4;
-
-//   display: block;
-//   background: url(../../../public/assets/citylights.png),rgb(32, 32, 32);
-//   background-size:contain;
-//   background-position-y: 100%;
-//   background-repeat: repeat-x;
-//   width: 100%;
-//   height: 100%;
-
-// }
