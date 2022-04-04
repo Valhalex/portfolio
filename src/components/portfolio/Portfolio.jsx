@@ -13,30 +13,34 @@ export default function Portfolio() {
       : setCurrentSlide(currentSlide < webDevPorfolio.length - 1 ? currentSlide + 1 : 0);
   };
 
-  
-  
+
+
+  var projects = webDevPorfolio.map(Object.entries())
 
 
   return (
     <div className="portfolio" id="portfolio">
       <div className="portfolioBg"></div>
+      {/* this will move a page full of portfolio projects */}
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
-        {webDevPorfolio.map((d) => (
-          <div className="container">
-            <a href={d.github}>
-              <div className="item" >
-                <div className="imgContainer">
-                  <img src={d.img} alt="" />
-                </div>
 
+        {projects.map((d) => (
+          <div className="container">
+            <a href={d.github}><button>GitHub</button></a>
+            <a href={d.live}><button>Live</button></a>
+            <div className="item" >
+              <div className="imgContainer">
+                <img src={d.img} alt="" />
               </div>
-              </a>
-            
+            </div>
+
           </div>
+
         ))}
+
       </div>
       <img
         src="assets/arrow.png"

@@ -22,7 +22,8 @@
   }
   .mountain{
     background-size: 100% 100%;
-    background-image: url('../../../public/assets/background.png');
+    background-image: url('https://i.imgur.com/eZOegVW.png');
+    
     
     
 
@@ -30,7 +31,7 @@
  
   .foreground{
     
-    background-image: url('../../../public/assets/foreground.png');
+    background-image: url('https://i.imgur.com/tFQ0UfG.png');
     background-size: 100% 100%;
     
   }
@@ -53,7 +54,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
+      overflow: hidden;
       h1 {
         font-size: 75px;
         color: $mainColor;

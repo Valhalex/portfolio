@@ -1,5 +1,7 @@
 export const webDevPorfolio = [
     {
+        "Projects":[
+    {
         id: 1,
         title: "Legend Of Zelda",
         img:
@@ -7,7 +9,9 @@ export const webDevPorfolio = [
         description:
             "This project was built using Html and JavaScript using the Kaboom framework.",
         github:
-            "https://github.com/Valhalex/zeldaKaboomJS/blob/main/game.js"
+            "https://github.com/Valhalex/zeldaKaboomJS/blob/main/game.js",
+        live:
+            "https://valhalex.github.io/zeldaKaboomJS/"
     },
     {
         id: 2,
@@ -17,7 +21,10 @@ export const webDevPorfolio = [
         description:
             "This project was built using the .Net and C#",
         github:
-            "https://github.com/Valhalex/Woz_C-_FP"
+            "https://github.com/Valhalex/Woz_C-_FP",
+            // needs a video walkthrough of what the application does
+        live:
+            ""
 
     },
     {
@@ -28,6 +35,11 @@ export const webDevPorfolio = [
         description:
             "This project was built using Html and JavaScript",
         github:
-            "https://github.com/Valhalex/ConnectFour"
+            "https://github.com/Valhalex/ConnectFour",
+        live:
+            "https://valhalex.github.io/ConnectFour/"
     }
+]
+}
+    
 ]

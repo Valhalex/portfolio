@@ -15,53 +15,53 @@ export default function Intro() {
     });
   }, []);
 
-  
+
 
 
 
   return (
     <ParallaxProvider>
-    <ParallaxBanner className="intro"
-      layers={[
-        {
-          className: 'bottom',
-          speed: -20,
-          shouldAlwaysCompleteAnimation: true,
+      <ParallaxBanner className="intro"
+        layers={[
+          {
+            className: 'bottom',
+            speed: -20,
+            shouldAlwaysCompleteAnimation: true,
 
-        },
-        {
-          className: 'gradient',
-        },
+          },
+          {
+            className: 'gradient',
+          },
 
-        {
-          className:'mountain',
-          speed: -10,
-          shouldAlwaysCompleteAnimation: true,
+          {
+            className: 'mountain',
+            speed: -10,
+            shouldAlwaysCompleteAnimation: true,
 
-        },
+          },
 
-        {
-          className:'foreground',
-          speed: -10,
-          shouldAlwaysCompleteAnimation: true,
+          {
+            className: 'foreground',
+            speed: -10,
+            shouldAlwaysCompleteAnimation: true,
 
-        },
-      ]}
+          },
+        ]}
 
-    >
-      <div className="frontTextContainer">
-        <div className="wrapper">
-          <h2>Hi There, I'm</h2>
-          <h1>Isaac Wallace</h1>
-          <h3>
-            I am a <span ref={textRef}></span>
-          </h3>
+      >
+        <div className="frontTextContainer">
+          <div className="wrapper">
+            <h2>Hi There, I'm</h2>
+            <h1>Isaac Wallace</h1>
+            <h3>
+              I am a <span ref={textRef}></span>
+            </h3>
+          </div>
+          <a href="#portfolio">
+            <img src="assets/down.png" alt="" />
+          </a>
         </div>
-        <a href="#portfolio">
-          <img src="assets/down.png" alt="" />
-        </a>
-      </div>
-    </ParallaxBanner>
+      </ParallaxBanner>
     </ParallaxProvider>
 
 
