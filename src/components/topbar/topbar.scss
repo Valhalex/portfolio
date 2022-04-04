@@ -78,9 +78,9 @@
     background-color: $secondary;
     color:$textMain;
 
-    important .logo{
+    .logo{
       transition: all 2s ease;
-      color:$textMain;
+      color:$textMain !important;
     }
     
     .hamburger {
