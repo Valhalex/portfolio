@@ -15,7 +15,6 @@ export default function Portfolio() {
 
 
 
-  var projects = webDevPorfolio.map(Object.entries())
 
 
   return (
@@ -27,10 +26,10 @@ export default function Portfolio() {
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
 
-        {projects.map((d) => (
+        {webDevPorfolio.map((d) => (
           <div className="container">
             <a href={d.github}><button>GitHub</button></a>
-            <a href={d.live}><button>Live</button></a>
+            {/* <a href={d.live}><button>Live</button></a> */}
             <div className="item" >
               <div className="imgContainer">
                 <img src={d.img} alt="" />

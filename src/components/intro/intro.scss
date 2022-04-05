@@ -8,29 +8,35 @@
   // place background, they should stack in the following order with the first being on top
   //   trees, mountains, moon/stars, sky
 
-  // height: 100vh;
-  // width: 100vw;
-
   .bottom{
+    position:absolute;
+    height: 100%;
+    width:100%;
     background-image: url('https://i.imgur.com/LZpvBXh.jpeg');
     background-size: 100% 100%;
     
     
   }
   .gradient{
+    position:absolute;
+    height: 100%;
+    width:100%;
     background: linear-gradient(rgba(255, 124, 124, 0.753) 5%, rgba(255, 244, 86, 0.788));
   }
   .mountain{
+    position:absolute;
+    height: 100%;
+    width:100%;
     background-size: 100% 100%;
     background-image: url('https://i.imgur.com/eZOegVW.png');
-    
-    
     
 
   }
  
   .foreground{
-    
+    position:absolute;
+    height: 100%;
+    width:100%;
     background-image: url('https://i.imgur.com/tFQ0UfG.png');
     background-size: 100% 100%;
     

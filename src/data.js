@@ -1,7 +1,6 @@
 export const webDevPorfolio = [
     {
-        "Projects":[
-    {
+        
         id: 1,
         title: "Legend Of Zelda",
         img:
@@ -39,7 +38,6 @@ export const webDevPorfolio = [
         live:
             "https://valhalex.github.io/ConnectFour/"
     }
-]
-}
+
     
 ]

@@ -7,12 +7,10 @@ import "./app.scss"
 import {useState} from 'react'
 import Menu from './components/menu/Menu'
 
-import { ParallaxProvider } from 'react-scroll-parallax'
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
   return (
-    <ParallaxProvider>
     <div className="app">
      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
@@ -23,7 +21,6 @@ function App() {
        <Contact/>
      </div>
     </div>
-    </ParallaxProvider>
   );
 }
 
