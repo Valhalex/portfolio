@@ -1,23 +1,69 @@
+@import '../../global.scss';
+
 .expertise {
-  height: 100%;
+  height: content;
   width: 100%;
-  display: flex;
+  overflow:hidden;
+  background: linear-gradient($mainColor, $secondary);;
+  h1{
+      margin: 1% 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $textMain;
+  }
+  
   .container {
-    position:relative;
+    position: relative;
 
     height: 80%;
-    width: 100%;
-    background-color: white;
+    margin: 0% 10%;
+    background-color: $mainColor;
+    border-radius: 50px;
     display: flex;
     justify-content: space-between;
-    flex-flow: column wrap;
+    flex-flow: wrap;
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
 
+    // item is just a card where the p element will sitontop of an image
     .item {
-        height: 10%;
-        width: 10%;
-      background-color: blue;
+      height: 40%;
+      width: 20%;
+      margin: 5% 5%;
+      background-color: $secondary;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      p{
+        text-align: center;
+        color: $textMain;
+        font-size: 140%;
+        
+        width: 100%;
+        height: 20%;
+      }
+      hr{
+          background-color: $textMain;
+          width: 80%;
+      }
+      .icon{
+          color: $mainColor;
+          height: 70%;
+          margin: 1% 0%;
+          width: 90%;
+          transition: all 1s;
+      }
+      .icon:hover{
+          border-width: 5px;
+      }
+
+
     }
   }
+  .container::-webkit-scrollbar {
+    display: none; // Safari and Chrome
+}
 }

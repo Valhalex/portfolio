@@ -1,57 +1,68 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { FaSass,FaDatabase, FaHtml5, FaCss3Alt, FaJsSquare, FaCodeBranch, FaReact, FaNodeJs } from "react-icons/fa"
+import {BsGearFill,BsMicrosoft} from "react-icons/bs"
+import {SiJquery} from "react-icons/si"
+import './expertise.scss'
 export default function Expertise() {
     return (
         <div className='expertise'>
             <div>
                 <h1>MY EXPERTISE</h1>
-                <h2>Technologies</h2>
             </div>
             <div className='container'>
                 <div className='item'>
                     <p>HTML5</p>
                     <hr />
-                    <FontAwesomeIcon icon="html5" />
+                    <FaHtml5 className="icon"/>
                 </div>
                 <div className='item'>
                     <p>CSS3</p>
-                    <FontAwesomeIcon icon="html5" />
+                    <hr />
+                    <FaCss3Alt className="icon"/>
                 </div>
                 <div className='item'>
                     <p>JavaScript</p>
-                    <FontAwesomeIcon icon="html5" />
+                    <hr />
+                    <FaJsSquare className="icon"/>
                 </div>
                 <div className='item'>
                     <p>jQuery</p>
-                    <FontAwesomeIcon icon="html5" />
+                    <hr />
+                    <SiJquery className="icon"/>
                 </div>
                 <div className='item'>
                     <p>Git</p>
-                    <FontAwesomeIcon icon="html5" />
+                    <hr />
+                    <FaCodeBranch className="icon"/>
                 </div>
                 <div className='item'>
                     <p>API's</p>
-                    <FontAwesomeIcon icon="html5" />
+                    <hr />
+                    <BsGearFill className="icon"/>
                 </div>
                 <div className='item'>
                     <p>React</p>
-                    <FontAwesomeIcon icon="html5" />
+                    <hr />
+                    <FaReact className="icon"/>
                 </div>
                 <div className='item'>
                     <p>Node</p>
-                    <FontAwesomeIcon icon="html5" />
+                    <hr />
+                    <FaNodeJs className="icon"/>
                 </div>
                 <div className='item'>
                     <p>Dot Net Core</p>
-                    <FontAwesomeIcon icon="html5" />
+                    <hr />
+                    <BsMicrosoft className="icon"/>
                 </div>
                 <div className='item'>
                     <p>Databases</p>
-                    <FontAwesomeIcon icon="html5" />
+                    <hr />
+                    <FaDatabase className="icon"/>
                 </div>
                 <div className='item'>
-                    <p>SCSS</p>
-                    <FontAwesomeIcon icon="html5" />
+                    <p>Sass</p>
+                    <hr />
+                    <FaSass className="icon"/>
                 </div>
                 
 

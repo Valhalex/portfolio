@@ -1,6 +1,6 @@
 import React from 'react'
 import './aboutme.scss'
-import { Linkedin, Github, Twitter } from 'react-bootstrap-icons';
+import {BsLinkedin, BsGithub, BsTwitter} from "react-icons/bs"
 export default function  AboutMe() {
     return (
         <div className='aboutMe'>
@@ -22,13 +22,13 @@ export default function  AboutMe() {
                     <br/>
                     <div className='links'>
                         <a href="https://www.linkedin.com/in/isaac-wallace-92b381123/">
-                        <Linkedin size={ 50}/>
+                        <BsLinkedin size={500} className='icon'/>
                         </a>
                         <a href="https://github.com/Valhalex/portfolio">
-                            <Github size={ 50}/>
+                            <BsGithub size={500} className='icon'/>
                         </a>
                         <a href="whttps://twitter.com/Valhalex96">
-                            <Twitter size={ 50}/>
+                            <BsTwitter size={500} className='icon' />
                         </a>
                     </div>
                 

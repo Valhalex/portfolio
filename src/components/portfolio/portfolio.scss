@@ -1,93 +1,34 @@
 @import "../../global.scss";
 
 .portfolio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+  overflow: auto;
+  white-space: nowrap;
   background-color: $mainColor;
-
-  // slider arrows
-  .arrow {
-    height: 50px;
-    position: absolute;
-    cursor: pointer;
-
-    @include tablet {
-      // display: none;
-    }
-
-    &.left {
-      left: 100px;
-      transform: rotateY(180deg);
-    }
-
-    &.right {
-      right: 100px;
-    }
-  }
-
-  .slider {
+  h1 {
+    position: relative;
     display: flex;
-    position: absolute;
-    left: 0;
-    transition: all 1s ease-out;
+    justify-content: center;
+    color: $textMain;
+  }
+  .container {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
 
-    @include tablet {
-      height: 100vh;
-      justify-content: center;
+    .top {
     }
-
-    .container {
-      width: 100%;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height:35%;
-        padding: 5%;
-        
-
-        .item {
-          border-radius: 20px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          animation: float 6s ease-in-out infinite;
-          // sets the origin of where i want the animation to start,
-          //in this case it starts at -10% Y of it's position
-          transform: translateY(-10%);
-
-          .imgContainer {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            
-
-            img {
-                width: 100%;
-                height: 100%;
-              
-            }
-          }
-        }
-        .item:hover {
-          animation: floatHover 0.3s ease-in-out infinite;
-          // sets the origin of where i want the animation to start,
-          //in this case it starts at -10% Y of it's position
-          transform: translateY(-3%);
-        }
-      }
+    .mid {
     }
+    .bottom {
+    }
+    // .item:hover {
+    //   animation: floatHover 0.3s ease-in-out infinite;
+    //   // sets the origin of where i want the animation to start,
+    //   //in this case it starts at -10% Y of it's position
+    //   transform: translateY(-3%);
+    // }
   }
 }
 
