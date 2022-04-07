@@ -1,0 +1,23 @@
+.expertise {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  .container {
+    position:relative;
+
+    height: 80%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+
+    .item {
+        height: 10%;
+        width: 10%;
+      background-color: blue;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

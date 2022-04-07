@@ -7,7 +7,7 @@ import "./app.scss"
 import {useState} from 'react'
 import Menu from './components/menu/Menu'
 import AboutMe from "./components/aboutMe/AboutMe";
-
+import Expertise from "./components/expertise/Expertise"
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
@@ -19,7 +19,7 @@ function App() {
        <Intro/>
        <AboutMe/>
        <Portfolio/>
-       
+       <Expertise />
        <Testimonials/>
        <Contact/>
      </div>

@@ -1,7 +1,6 @@
 import "./intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
-import Rellax from "rellax";
 export default function Intro() {
   const textRef = useRef();
   
@@ -15,7 +14,6 @@ export default function Intro() {
     });
   }, []);
 
-  var rellax = new Rellax('.rellax')
 
 
 
@@ -35,7 +33,7 @@ export default function Intro() {
             I am a <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#portfolio">
+        <a href="#aboutMe">
           <img src="assets/down.png" alt="" />
         </a>
       </div>
