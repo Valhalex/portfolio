@@ -1,5 +1,5 @@
 import "./testimonials.scss"
-import { PersonOutline, LinkedIn } from '@mui/icons-material';
+import { PersonOutline } from '@mui/icons-material';
 
 export default function Testimonials() {
   const data = [

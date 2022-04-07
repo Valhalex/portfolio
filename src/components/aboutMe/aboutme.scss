@@ -1,0 +1,110 @@
+@import "../../global.scss";
+
+.border {
+  background-color: black;
+  height: 81%;
+  width: 41%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 0;
+  opacity: 80%;
+  filter: blur(15px);
+}
+.background {
+  background-color: white;
+  height: 80%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 0;
+  border-radius: 5%;
+}
+.aboutMe {
+  height: 100%;
+  width: 100%;
+  background-color: $mainColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $mainColor;
+  .container {
+    background-color: $secondary;
+    height: 80%;
+    width: 40%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    overflow: hidden;
+    background: url("https://i.imgur.com/jYCcS1t.jpg") center center no-repeat;
+    background-size: 100% 100%;
+    opacity: 100%;
+    transition: all 1s ease;
+    .text {
+      opacity: 100%;
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      transition: top 1s, opacity 1s;
+      height: 100%;
+      top: 100%;
+
+      h1 {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 1% 0%;
+        
+      }
+      h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+      }
+      h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0% 10%;
+      }
+    }
+    .links {
+      opacity: 100%;
+    
+      display: flex;
+      position: absolute;
+      bottom: -105%;
+      left: 25%;
+      right: 25%;
+      justify-content: space-between;
+      margin: 5%;
+      transition: all 2s ease-out;
+    }
+  }
+
+  .container:hover {
+    opacity: 85%;
+    background-size: 200% 200%;
+    background-position: left bottom;
+    .text {
+      top: 0%;
+    }
+    .links{
+        bottom: 5%;
+    }
+  }
+
+  .card::-webkit-scrollbar {
+    display: none;
+  }
+}

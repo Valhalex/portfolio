@@ -1,5 +1,4 @@
 import "./portfolio.scss";
-// import PortfolioList from "../portfolioList/PortfolioList";
 import { useState } from 'react';
 import { webDevPorfolio } from "../../data";
 

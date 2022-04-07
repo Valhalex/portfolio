@@ -1,19 +1,10 @@
 import "./intro.scss";
 import { init } from "ityped";
-import { useEffect, useRef, useState } from "react";
-
+import { useEffect, useRef } from "react";
+import Rellax from "rellax";
 export default function Intro() {
   const textRef = useRef();
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  // parallax listener
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  
   // typing/blinking effect
   useEffect(() => {
     init(textRef.current, {
@@ -24,7 +15,7 @@ export default function Intro() {
     });
   }, []);
 
-
+  var rellax = new Rellax('.rellax')
 
 
 
@@ -33,9 +24,9 @@ export default function Intro() {
     <div className="intro">
       <div className="bottom" ></div>
       <div className="gradient"></div>
-      <div className="mountain" style={{ transform: `translateY(${offsetY * 100}px)` }}></div>
+      <div className="mountain"></div>
       <div className="mountBlur"></div>
-      <div className="foreground" style={{ transform: `translateY(${offsetY * 0.8}px)` }}>
+      <div className="foreground rellax" data-rellax-speed="7" ></div>
       <div className="frontTextContainer">
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
@@ -48,9 +39,8 @@ export default function Intro() {
           <img src="assets/down.png" alt="" />
         </a>
       </div>
-      </div>
-      
     </div>
+      
 
   );
 }
