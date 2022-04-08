@@ -3,7 +3,7 @@ $secondary: #D72F53;
 $textMain: rgb(228, 218, 78);
 
 @mixin tablet {
-  @media screen and (min-width: 600px) {
+  @media screen and (max-width: 600px) {
     //For Tablets
     @content;
   }

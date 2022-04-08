@@ -1,57 +1,101 @@
 @import "../../global.scss";
 
 .portfolio {
-  overflow: auto;
+  height: max-content !important;
   white-space: nowrap;
   background-color: $mainColor;
+  overflow-y: hidden;
+  overflow-x:scroll;
+
+  
   h1 {
     position: relative;
     display: flex;
     justify-content: center;
     color: $textMain;
+    text-shadow: 2px 2px black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
   }
   .container {
     display: inline-block;
-    color: white;
+    background-color: rgb(255, 255, 255) ;
     text-align: center;
-    padding: 14px;
+    margin: 1%;
     text-decoration: none;
+    border-radius: 5%;
+    height: 25%;
+    transition: all 1s;
+    text-shadow: 1px 1px grey;
+
+    scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
 
     .top {
+      height: 80%;
+      width: 100%;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      transition: all 1s;
+
+      img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+
+      
     }
     .mid {
+      height:10%;
+      width: 100%;
+      margin: 2% 0%;
+      font-size: 120%;
+      font-weight: 200;
+      
+      transition: all 1s;
+
     }
     .bottom {
+      height:10%;
+      width: 100%;
+      background-color: $secondary;
+      display: flex;
+      justify-content: space-around;
+      transition: all 1s;
+
+      .links{
+        width: 100%;
+        a{
+          
+          font-size: 150%;
+          margin:5% 10%;
+        }
+      }
     }
-    // .item:hover {
-    //   animation: floatHover 0.3s ease-in-out infinite;
-    //   // sets the origin of where i want the animation to start,
-    //   //in this case it starts at -10% Y of it's position
-    //   transform: translateY(-3%);
-    // }
+  }
+  .container:hover{
+    transform: scale(1.04);
+    
+    
+    .top{
+      transform: scale(0.92);
+      border-radius: 5px;
+
+    }
+    .mid{
+      transform: translateY(-10px);
+    }
+    .bottom{
+      transform: translateY(-14px) scale(0.9);
+      border-radius: 5px;
+    }
+
   }
 }
 
-// make the portfolio icon float slowly
-@keyframes float {
-  0% {
-    transform: translateY(-10%);
-    transition: ease 0.5s;
-  }
-  50% {
-    transform: translateY(10%);
-    transition: ease 0.5s;
-  }
-}
-
-// make the icon float faster when hovered on
-@keyframes floatHover {
-  0% {
-    transform: translateY(-3%);
-    transition: ease 0.5s;
-  }
-  50% {
-    transform: translateY(3%);
-    transition: ease 0.5s;
-  }
-}

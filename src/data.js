@@ -6,7 +6,7 @@ export const webDevPorfolio = [
         img:
             "https://i.imgur.com/ZFBre9s.jpg",
         description:
-            "This project was built using Html and JavaScript using the Kaboom framework.",
+            "Html | JavaScript",
         github:
             "https://github.com/Valhalex/zeldaKaboomJS/blob/main/game.js",
         live:
@@ -18,7 +18,7 @@ export const webDevPorfolio = [
         img:
             "https://i.imgur.com/aBkSMte.jpg",
         description:
-            "This project was built using the .Net and C#",
+            ".Net | C#",
         github:
             "https://github.com/Valhalex/Woz_C-_FP",
             // needs a video walkthrough of what the application does
@@ -32,7 +32,7 @@ export const webDevPorfolio = [
         img:
             "https://i.imgur.com/c0iNqYr.jpg",
         description:
-            "This project was built using Html and JavaScript",
+            "Html | CSS | JavaScript",
         github:
             "https://github.com/Valhalex/ConnectFour",
         live:

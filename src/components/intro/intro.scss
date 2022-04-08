@@ -62,20 +62,24 @@
       h1 {
         font-size: 75px;
         color: $mainColor;
+        text-shadow: 2px 2px black;
       }
       h2 {
         font-size: 65px;
         color: $mainColor;
+        text-shadow: 2px 2px black;
       }
       h3 {
         text-align: center;
         font-size: 95px;
         color: $textMain;
+        text-shadow: 3px 3px black;
 
         span {
           font-size: inherit;
           color: $textMain;
           overflow: hidden;
+          text-shadow: 3px 3px black;
         }
 
         .ityped-cursor {

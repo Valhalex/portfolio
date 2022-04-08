@@ -22,7 +22,7 @@ export default function Portfolio() {
           <div className="bottom">
             <div className="links">
               <a href={d.github}><BsGithub /></a>
-              <a href={d.live}><CgWebsite /></a>
+              <a href={d.live} title="hello"><CgWebsite /></a>
             </div>
           </div>
         </div>

@@ -25,6 +25,10 @@
     flex-flow: wrap;
     -ms-overflow-style: none;  // IE 10+
     overflow: -moz-scrollbars-none;  // Firefox
+    @include tablet{
+      height: 60%;
+      width: 20%;
+    }
 
     // item is just a card where the p element will sitontop of an image
     .item {
@@ -56,14 +60,18 @@
           width: 90%;
           transition: all 1s;
       }
-      .icon:hover{
-          border-width: 5px;
-      }
-
-
+    }
+    .item:hover{
+      animation: floating 3s ease-in-out infinite
     }
   }
   .container::-webkit-scrollbar {
     display: none; // Safari and Chrome
 }
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 30px); }
+  100%   { transform: translate(0, -0px); }   
 }
