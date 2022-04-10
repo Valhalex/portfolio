@@ -1,6 +1,6 @@
 import "./topbar.scss"
 import { Person, Mail } from "@mui/icons-material"
-
+import {BsFillFileTextFill} from "react-icons/bs"
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
     <div className={"topbar " + (menuOpen && "active")}>
@@ -15,6 +15,13 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <Mail className="icon" />
             <span>iwallace96@outlook.com</span>
           </div>
+          <div className="itemContainer resume">
+            <BsFillFileTextFill className="icon" />
+            <a href="https://drive.google.com/file/d/156xEb-IvzfXxJYopGlAqqFURTM8fn8dv/view?usp=sharing">
+            Resume
+            </a>
+          </div>
+          
         </div>
 
 

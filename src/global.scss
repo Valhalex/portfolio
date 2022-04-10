@@ -2,42 +2,32 @@ $mainColor: #441944;
 $secondary: #D72F53;
 $textMain: rgb(228, 218, 78);
 
-@mixin tablet {
-  @media screen and (max-width: 600px) {
-    //For Tablets
-    @content;
-  }
+// handle all scrollbars
+::-webkit-scrollbar {
+  width: 20px;
 }
 
-@mixin laptopNormal {
-  @media screen and (min-width: 768px) {
-    //For Laptops
-    @content;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary; 
+  border-radius: 10px;
 }
 
-@mixin laptopLarge {
-  @media screen and (min-width: 992px) {
-    //For Large Laptops
-    @content;
-  }
-}
-@mixin tv {
-  @media screen and (min-width: 1280px) {
-    //For Big TV's (HD Screens)
-    @content;
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $textMain; 
 }
 
-@mixin highres {
-  @media screen and (min-width: 1920px) {
-    //For Projectors or Higher Resolution Screens (Full HD)
-    @content;
-  }
-}
-@mixin ultraHD {
-  @media screen and (min-width: 3840px) {
-    //For 4K Displays (Ultra HD)
-    @content;
-  }
+
+
+@mixin mobile {
+    @media  (min-width: 200px) and (max-width: 700px){
+        @content
+    }
 }

@@ -18,7 +18,7 @@
 
   &.active {
     right: 50%;
-    @include tablet {
+    @include mobile {
         width: 100%;
         right:0%
       }

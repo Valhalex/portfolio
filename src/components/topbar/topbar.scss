@@ -9,13 +9,12 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
-  font-family: 'Teko';
-  overflow:hidden;
+  font-family: "Teko";
+  overflow: hidden;
 
-  -webkit-box-shadow:0px 0px 48px 14px rgba(0,0,0,0.7);
--moz-box-shadow: 0px 0px 48px 14px rgba(0,0,0,0.7);
-box-shadow: 0px 0px 48px 14px rgba(0,0,0,0.7);
-
+  -webkit-box-shadow: 0px 0px 48px 14px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 0px 48px 14px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 48px 14px rgba(0, 0, 0, 0.7);
 
   .wrapper {
     padding: 10px 30px;
@@ -28,7 +27,7 @@ box-shadow: 0px 0px 48px 14px rgba(0,0,0,0.7);
       align-items: center;
 
       .logo {
-        color:$secondary;
+        color: $secondary;
         font-size: 40px;
         font-weight: 700;
         text-decoration: none;
@@ -40,26 +39,39 @@ box-shadow: 0px 0px 48px 14px rgba(0,0,0,0.7);
         display: flex;
         align-items: center;
         margin-left: 30px;
-
         
+        a{
+          text-decoration: none;
+          color: $textMain;
+        }
+        a:hover{
+          color:white;
+        }
+
         
 
         .icon {
           font-size: 18px;
           margin-right: 5px;
         }
+        
 
         span {
           font-size: 15px;
           font-weight: 500;
-          
         }
+        @include mobile {
+          display: none;
+        }
+      
+        
       }
+      
+      
     }
 
     .right {
       .hamburger {
-        
         width: 32px;
         height: 25px;
         display: flex;
@@ -80,13 +92,13 @@ box-shadow: 0px 0px 48px 14px rgba(0,0,0,0.7);
 
   &.active {
     background-color: $secondary;
-    color:$textMain;
+    color: $textMain;
 
-    .logo{
+    .logo {
       transition: all 2s ease;
-      color:$textMain !important;
+      color: $textMain !important;
     }
-    
+
     .hamburger {
       span {
         &:first-child {
@@ -104,3 +116,7 @@ box-shadow: 0px 0px 48px 14px rgba(0,0,0,0.7);
     }
   }
 }
+
+
+  
+

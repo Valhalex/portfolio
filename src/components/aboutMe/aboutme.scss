@@ -11,9 +11,11 @@
   z-index: 0;
   border-radius: 5%;
   // outter glow
-  -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 0px 0px 105px 45px rgba(0, 0, 0, 0.9);
-  box-shadow: 0px 0px 105px 45px rgba(0, 0, 0, 0.9);
+  box-shadow: 10px 10px black;
+
+  // -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 0, 0, 0.9);
+  // -moz-box-shadow: 0px 0px 105px 45px rgba(0, 0, 0, 0.9);
+  // box-shadow: 0px 0px 105px 45px rgba(0, 0, 0, 0.9);
 }
 .aboutMe {
   height: 100%;
@@ -35,10 +37,9 @@
     overflow: hidden;
     background: url("https://i.imgur.com/jYCcS1t.jpg") center center no-repeat;
     background-size: 100% 100%;
-    opacity: 100%;
+    
     transition: all 1s ease;
     .text {
-      opacity: 100%;
       display: flex;
       position: absolute;
       flex-direction: column;
@@ -90,7 +91,8 @@
   }
 
   .container:hover {
-    opacity: 70%;
+    // opacity: 70%;
+    background-color: opacity($color: #0000000a);
     background-size: 200% 200%;
     background-position: left bottom;
     .text {

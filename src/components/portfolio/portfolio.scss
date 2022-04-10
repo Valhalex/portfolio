@@ -1,36 +1,37 @@
 @import "../../global.scss";
 
 .portfolio {
-  height: max-content !important;
+  // height: 100% !important;
   white-space: nowrap;
   background-color: $mainColor;
   overflow-y: hidden;
-  overflow-x:scroll;
-
+  overflow-x: scroll;
+  scroll-behavior: smooth;
   
   h1 {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     color: $textMain;
     text-shadow: 2px 2px black;
     margin-top: 2%;
-    margin-bottom: 2%;
-
+    width: 100vw;
+    right: 0;
+    left: 0;
   }
   .container {
     display: inline-block;
-    background-color: rgb(255, 255, 255) ;
+    background-color: rgb(255, 255, 255);
     text-align: center;
-    margin: 1%;
+    margin: 7% 5%;
     text-decoration: none;
     border-radius: 5%;
-    height: 25%;
-    transition: all 1s;
-    text-shadow: 1px 1px grey;
+    box-shadow: 5px 5px black;
 
-    scrollbar-color: #6969dd #e0e0e0;
-  scrollbar-width: thin;
+    transition: all 1s;
+    
+    position: relative;
+
 
     .top {
       height: 80%;
@@ -41,61 +42,53 @@
       align-items: center;
       transition: all 1s;
 
-      img{
+      img {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
         width: 100%;
       }
-
-      
     }
     .mid {
-      height:10%;
+      height: 10%;
       width: 100%;
       margin: 2% 0%;
       font-size: 120%;
-      font-weight: 200;
-      
-      transition: all 1s;
+      font-weight: 500;
 
+      transition: all 1s;
     }
     .bottom {
-      height:10%;
+      height: 10%;
       width: 100%;
       background-color: $secondary;
       display: flex;
       justify-content: space-around;
       transition: all 1s;
 
-      .links{
+      .links {
         width: 100%;
-        a{
-          
+        a {
           font-size: 150%;
-          margin:5% 10%;
+          margin: 5% 10%;
         }
       }
     }
   }
-  .container:hover{
+  .container:hover {
     transform: scale(1.04);
-    
-    
-    .top{
+
+    .top {
       transform: scale(0.92);
       border-radius: 5px;
-
     }
-    .mid{
+    .mid {
       transform: translateY(-10px);
     }
-    .bottom{
+    .bottom {
       transform: translateY(-14px) scale(0.9);
       border-radius: 5px;
     }
-
   }
 }
-

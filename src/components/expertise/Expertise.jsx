@@ -4,7 +4,7 @@ import {SiJquery} from "react-icons/si"
 import './expertise.scss'
 export default function Expertise() {
     return (
-        <div className='expertise'>
+        <div className='expertise' id="expertise">
             <div>
                 <h1>MY EXPERTISE</h1>
             </div>

@@ -3,7 +3,7 @@ import './aboutme.scss'
 import {BsLinkedin, BsGithub, BsTwitter} from "react-icons/bs"
 export default function  AboutMe() {
     return (
-        <div className='aboutMe'>
+        <div className='aboutMe' id="aboutMe">
             <div className='border'>
             </div>
             <div className='background'></div>

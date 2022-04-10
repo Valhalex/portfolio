@@ -19,7 +19,7 @@ export default function Intro() {
 
   return (
 
-    <div className="intro">
+    <div className="intro" id="intro">
       <div className="bottom" ></div>
       <div className="gradient"></div>
       <div className="mountain"></div>
