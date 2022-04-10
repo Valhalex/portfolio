@@ -10,12 +10,10 @@
   position: absolute;
   z-index: 0;
   border-radius: 5%;
-  // outter glow
   box-shadow: 10px 10px black;
-
-  // -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 0, 0, 0.9);
-  // -moz-box-shadow: 0px 0px 105px 45px rgba(0, 0, 0, 0.9);
-  // box-shadow: 0px 0px 105px 45px rgba(0, 0, 0, 0.9);
+  @include mobile {
+    display: none;
+  }
 }
 .aboutMe {
   height: 100%;
@@ -37,7 +35,10 @@
     overflow: hidden;
     background: url("https://i.imgur.com/jYCcS1t.jpg") center center no-repeat;
     background-size: 100% 100%;
-    
+    @include mobile {
+      width: 90%;
+    }
+
     transition: all 1s ease;
     .text {
       display: flex;
@@ -74,24 +75,31 @@
       opacity: 100%;
 
       display: flex;
-      position: absolute;
+      position: relative;
       bottom: -105%;
-      left: 25%;
-      right: 25%;
-      justify-content: space-between;
-      margin: 5%;
+      left: 5%;
       transition: all 2s ease-out;
+
       .icon {
-        color: $textMain;
+        color: $secondary;
         height: 70%;
         width: 60%;
-        
+        margin: 5%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile {
+          width: 80%;
+          height: 80%;
+
+          
+        }
       }
     }
   }
 
   .container:hover {
-    // opacity: 70%;
     background-color: opacity($color: #0000000a);
     background-size: 200% 200%;
     background-position: left bottom;
@@ -99,11 +107,10 @@
       top: 0%;
     }
     .links {
-      bottom: 5%;
+      bottom: -40%;
+      
     }
   }
 
-  .card::-webkit-scrollbar {
-    display: none;
-  }
+ 
 }

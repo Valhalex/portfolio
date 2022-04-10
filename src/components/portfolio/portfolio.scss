@@ -29,8 +29,10 @@
     box-shadow: 5px 5px black;
 
     transition: all 1s;
-    
     position: relative;
+    @include mobile{
+      top: 10%
+    }
 
 
     .top {

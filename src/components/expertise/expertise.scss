@@ -12,6 +12,8 @@
       align-items: center;
       color: $textMain;
   }
+  left:0;
+  right:0;
   
   .container {
     position: relative;
@@ -27,8 +29,9 @@
     -ms-overflow-style: none;  // IE 10+
     overflow: -moz-scrollbars-none;  // Firefox
     @include mobile{
-      height: 60%;
-      width: 20%;
+      height: 80%;
+      width: 80%;
+      
     }
 
     // item is just a card where the p element will sitontop of an image

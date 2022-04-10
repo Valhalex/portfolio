@@ -27,7 +27,8 @@ $textMain: rgb(228, 218, 78);
 
 
 @mixin mobile {
-    @media  (min-width: 200px) and (max-width: 700px){
-        @content
-    }
+  @media screen and (min-width: 300px) and (max-width: 700px) {
+    //For Tablets
+    @content;
+  }
 }
