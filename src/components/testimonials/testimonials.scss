@@ -6,17 +6,17 @@
     flex-direction: column;
     align-items: center;
 
-    //   @include mobile{
-    //     justify-content: space-around;
-    //   }
+      @include mobile{
+        justify-content: space-around;
+      }
 
 
     h1 {
         font-size: 50px;
         color:$textMain;
-        // @include mobile{
-        //   font-size: 20px;
-        // }
+        @include mobile{
+          font-size: 20px;
+        }
     }
 
     .container {
@@ -26,10 +26,10 @@
         align-items: center;
         justify-content: center;
 
-        // @include mobile{
-        //   flex-direction: column;
-        //   height: 100%;
-        // }
+        @include mobile{
+          flex-direction: column;
+          height: 100%;
+        }
 
         .card {
             
@@ -44,21 +44,22 @@
             margin-right: 2%;
             transition: all 1s ease;
 
-            //   @include mobile{
-            //     height: 180px;
-            //     margin: 10px 0;
-            //   }
+              @include mobile{
+                height: 180px;
+                margin: 10px 0;
+                padding: 10px;
+              }
 
             &.featured {
                 width: 300px;
                 height: 75%;
                 margin: 0 30px;
 
-                //   @include mobile{
-                //     width: 250px;
-                //     height: 180px;
-                //     margin: 1px;
-                //   }
+                  @include mobile{
+                    width: 250px;
+                    height: 180px;
+                    margin: 1px;
+                  }
             }
 
             &:hover {
@@ -71,7 +72,10 @@
                 justify-content: center;
                 height: 30%;
                 overflow: hidden;
-
+                @include mobile{
+                    display: none;
+                    
+                }
                 .icon {
                     height: 60px;
                     width: 60px;
@@ -79,26 +83,19 @@
                     border: 3px solid black;
                     border-radius: 50%;
                     color: black;
-                    @include mobile{
-                        display: none;
-                    }
+                    
                 }
 
                 img {
 
                     &.left,
                     &.right {
-                        height: 25px;
-                        
-                    }
-                    .left{
                         @include mobile {
-                           display: none;
-                        }
-                    } 
-                    .right{
-                        width: 100%;
+                            display: none;
+                         }
                     }
+                    
+                    
                     
 
                     &.user {
@@ -111,8 +108,7 @@
 
 
                         @include mobile{
-                          width: 100%;
-                          height: 30px;
+                          display:none;
                         }
                     }
                 }
@@ -124,7 +120,7 @@
                 border-radius: 10px;
                 background-color: rgb(224, 155, 167);
                 @include mobile{
-                    padding: 0;
+                    height: 60%
                 }
                 
             }
@@ -135,16 +131,16 @@
                 align-items: center;
                 flex-direction: column;
                 justify-content: center;
-                height: 20%;
+                height: 40%;
 
                 h3 {
                     margin-bottom: 5px;
                     overflow: hidden;
                     color:$mainColor;
 
-                    //   @include mobile{
-                    //     font-size: 14px;
-                    //   }
+                      @include mobile{
+                        font-size: 14px;
+                      }
                 }
 
                 h4 {
@@ -152,9 +148,9 @@
                     overflow: hidden;
                     text-align: center;
                     
-                    // @include mobile{
-                    //   font-size: 13px;
-                    // }
+                    @include mobile{
+                      font-size: 13px;
+                    }
                 }
             }
         }
