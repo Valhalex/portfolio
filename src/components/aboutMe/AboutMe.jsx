@@ -27,7 +27,7 @@ export default function  AboutMe() {
                         <a href="https://github.com/Valhalex/portfolio">
                             <BsGithub size={500} className='icon'/>
                         </a>
-                        <a href="whttps://twitter.com/Valhalex96">
+                        <a href="https://twitter.com/Valhalex96">
                             <BsTwitter size={500} className='icon' />
                         </a>
                     </div>
