@@ -1,7 +1,31 @@
 export const webDevPorfolio = [
     {
-        
         id: 1,
+        title: "Ecommerce UI",
+        img:
+            "",
+        description:
+            "Html | SCSS | JavaScript",
+        github:
+            "https://github.com/Valhalex/frontendmentor_ecommerce",
+        live:
+            "https://sneaker-company.netlify.app"
+    },
+    {
+        id: 2,
+        title: "Netflix",
+        img:
+            "",
+        description:
+            "Html | SCSS | JavaScript | React",
+        github:
+            "https://github.com/Valhalex/netflix-clone",
+        live:
+            "https://isaac-netflix-clone.netlify.app"
+    },
+    
+    {
+        id: 3,
         title: "Legend Of Zelda",
         img:
             "https://i.imgur.com/ZFBre9s.jpg",
@@ -13,7 +37,7 @@ export const webDevPorfolio = [
             "https://valhalex.github.io/zeldaKaboomJS/"
     },
     {
-        id: 2,
+        id: 4,
         title: "Tax Calculator",
         img:
             "https://i.imgur.com/aBkSMte.jpg",
@@ -27,7 +51,7 @@ export const webDevPorfolio = [
 
     },
     {
-        id: 3,
+        id: 5,
         title: "Connect Four",
         img:
             "https://i.imgur.com/c0iNqYr.jpg",
