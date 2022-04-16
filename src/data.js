@@ -1,9 +1,9 @@
 export const webDevPorfolio = [
     {
         id: 1,
-        title: "Ecommerce UI",
+        title: "Sneakers Ecommerce",
         img:
-            "",
+            "https://i.imgur.com/yZXVIxj.png",
         description:
             "Html | SCSS | JavaScript",
         github:
@@ -15,7 +15,7 @@ export const webDevPorfolio = [
         id: 2,
         title: "Netflix",
         img:
-            "",
+            "https://i.imgur.com/RXq5sYA.png",
         description:
             "Html | SCSS | JavaScript | React",
         github:
