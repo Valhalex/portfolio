@@ -35,6 +35,7 @@
     overflow: hidden;
     background: url("https://i.imgur.com/jYCcS1t.jpg") center center no-repeat;
     background-size: 100% 100%;
+    object-fit: cover;
     @include mobile {
       width: 90%;
     }

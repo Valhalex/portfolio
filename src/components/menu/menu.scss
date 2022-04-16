@@ -11,16 +11,17 @@
   align-items: center;
   justify-content: center;
   transition: all 1s ease;
-
-  width: 50%;
+  opacity: 60%;
+  width: 25%;
   right: -50%;
   
 
   &.active {
-    right: 50%;
+    right: 75%;
     @include mobile {
         width: 100%;
-        right:0%
+        right:0%;
+        
       }
   }
 

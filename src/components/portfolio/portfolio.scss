@@ -27,11 +27,15 @@
     text-decoration: none;
     border-radius: 5%;
     box-shadow: 5px 5px black;
-
+    height:80%;
+    width: 30%;
+    overflow:hidden;
     transition: all 1s;
     position: relative;
     @include mobile{
-      top: 10%
+      top: 10%;
+      height: 80%;
+      width: 80%;
     }
 
 
@@ -50,6 +54,7 @@
         align-items: center;
         height: 100%;
         width: 100%;
+        object-fit:cover;
       }
     }
     .mid {
