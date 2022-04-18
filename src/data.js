@@ -11,18 +11,18 @@ export const webDevPorfolio = [
         live:
             "https://sneaker-company.netlify.app"
     },
-    {
-        id: 2,
-        title: "Netflix",
-        img:
-            "https://i.imgur.com/RXq5sYA.png",
-        description:
-            "Html | SCSS | JavaScript | React",
-        github:
-            "https://github.com/Valhalex/netflix-clone",
-        live:
-            "https://isaac-netflix-clone.netlify.app"
-    },
+    // {
+    //     id: 2,
+    //     title: "Netflix",
+    //     img:
+    //         "https://i.imgur.com/RXq5sYA.png",
+    //     description:
+    //         "Html | SCSS | JavaScript | React",
+    //     github:
+    //         "https://github.com/Valhalex/netflix-clone",
+    //     live:
+    //         "https://isaac-netflix-clone.netlify.app"
+    // },
     
     {
         id: 3,
