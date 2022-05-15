@@ -7,7 +7,7 @@ export const webDevPorfolio = [
         description:
             "Html | SCSS | JavaScript",
         github:
-            "https://github.com/Valhalex/frontendmentor_ecommerce",
+            "https://github.com/Valhalex/FEM_Ecommerce",
         live:
             "https://sneaker-company.netlify.app"
     },
